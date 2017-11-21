@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+// variables
+@import 'variables';
+
+// fonts
+@import 'fonts';
+
+// configurations
+@import 'configurations';
+
+// placeholders
+@import 'placeholders';
+
+// header
+@import 'header';
+
+// main
+@import 'main';
+
+// aside
+@import 'aside';
+
+// aside-toggle
+@import 'aside-toggle';
+
+// components
+@import 'components/components';
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    width: 100%;
+
+    &::after {
+        @extend %clearfixafter;
+    }
+}

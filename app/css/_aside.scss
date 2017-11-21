@@ -1,0 +1,33 @@
+.aside {
+    @extend %transition;
+}
+
+@media ( min-width: $media-xs ) {
+    .aside {
+        background-color: $color-white;
+        height: calc( 100% - 100px );
+        left: 100%;
+        overflow: auto;
+        padding: 5px 10px;
+        position: fixed;
+        top: 100px;
+        width: 100%;
+
+        &--opened {
+            left: 0;
+        }
+    }
+}
+
+@media ( min-width: $media-sm ) {}
+
+@media ( min-width: $media-md ) {
+    .aside {
+        float: left;
+        height: auto;
+        overflow: hidden;
+        padding: 0;
+        position: static;
+        width: 30%;
+    }
+}

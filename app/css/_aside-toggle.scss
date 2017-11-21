@@ -1,0 +1,41 @@
+@media ( min-width: $media-xs ) {
+    .aside-toggle {
+        background-color: $color-white;
+        border: none;
+        height: 30px;
+        padding: 0;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 40px;
+
+        &__line {
+            background-color: $color-black;
+            display: block;
+            height: 5px;
+            position: absolute;
+            width: 100%;
+
+            &:first-child {
+                top: 0;
+            }
+
+            &:nth-child( even ) {
+                margin-top: -2.5px;
+                top: 50%;
+            }
+
+            &:last-child {
+                bottom: 0;
+            }
+        }
+    }
+}
+
+@media ( min-width: $media-sm ) {}
+
+@media ( min-width: $media-md ) {
+    .aside-toggle {
+        display: none;
+    }
+}

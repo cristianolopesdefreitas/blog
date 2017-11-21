@@ -1,0 +1,24 @@
+// colors
+$color-maroon: #800000;
+$color-bright-red: #aa0000;
+$color-guardsman-red: #d40000;
+$color-white: #ffffff;
+$color-black: #000000;
+
+// fonts
+$primaryFontFamily: 'ralewayregular';
+$primaryFontFamilyBold: 'ralewaybold';
+$primaryFontFamilyItalic: 'ralewayitalic';
+$primaryFontFamilyBoldItalic: 'ralewaybold_italic';
+$secundaryFontFamily: 'pixellarimedium';
+
+// media queries
+$media-xs: 320px;
+$media-sm: 768px;
+$media-md: 992px;
+
+/*
+@media ( min-width: $media-xs ) {}
+@media ( min-width: $media-sm ) {}
+@media ( min-width: $media-md ) {}
+*/

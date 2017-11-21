@@ -1,0 +1,14 @@
+.aside-box {
+    &__title {
+        background-color: $color-maroon;
+        font-family: $secundaryFontFamily;
+        font-size: 25px;
+        color: $color-white;
+        margin: 0;
+        padding: 10px 10px 6px 10px;
+    }
+
+    &__content {
+        padding: 10px;
+    }
+}

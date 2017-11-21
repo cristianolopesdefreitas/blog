@@ -1,0 +1,15 @@
+.main {}
+
+@media ( min-width: $media-xs ) {
+    width: 100%;
+}
+
+@media ( min-width: $media-sm ) {}
+
+@media ( min-width: $media-md ) {
+    .main {
+        float: left;
+        padding-right: 20px;
+        width: 70%;
+    }
+}

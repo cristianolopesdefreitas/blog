@@ -1,0 +1,29 @@
+.search-form {
+    height: 30px;
+    @extend %clearfixafter;
+
+    &__field,
+    &__button {
+        border: 1px solid $color-black;
+        float: left;
+        height: 30px;
+        padding: 5px;
+    }
+
+    &__field {
+        background-color: $color-white;
+        border-right: 0;
+        width: 80%;
+    }
+
+    &__button {
+        background-color: $color-bright-red;
+        border-left: 0;
+        color: $color-white;
+        width: 20%;
+
+        &:hover {
+            background-color: $color-guardsman-red;
+        }
+    }
+}

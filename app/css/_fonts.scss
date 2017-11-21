@@ -1,0 +1,40 @@
+// fonts
+@font-face {
+    font-family: 'pixellarimedium';
+    src: url('../fonts/pixellari-webfont.woff2') format('woff2'),
+         url('../fonts/pixellari-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewayitalic';
+    src: url('../fonts/raleway-italic-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ralewaybold_italic';
+    src: url('../fonts/raleway-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-bolditalic-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}

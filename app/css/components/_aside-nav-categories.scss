@@ -1,0 +1,26 @@
+.aside-nav-category {
+    text-align: left;
+
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        display: block;
+    }
+
+    &__link {
+        color: $color-black;
+        display: block;
+        padding: 5px 0;
+        text-decoration: none;
+
+        @extend %transition;
+
+        &:hover {
+            padding-left: 10px;
+        }
+    }
+}

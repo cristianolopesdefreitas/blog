@@ -1,0 +1,30 @@
+.aside-nav-tag {
+    text-align: center;
+
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        display: inline-block;
+        margin: 6px 1px;
+    }
+
+    &__link {
+        border: 1px solid $color-maroon;
+        color: $color-black;
+        font-size: 14px;
+        padding: 5px 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        @extend %transition;
+
+        &:hover {
+            background-color: $color-guardsman-red;
+            color: $color-white;
+        }
+    }
+}
