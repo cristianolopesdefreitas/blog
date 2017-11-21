@@ -1,7 +1,10 @@
 .main {}
 
 @media ( min-width: $media-xs ) {
-    width: 100%;
+    .main {
+        padding: 5px 0;
+        width: 100%;
+    }
 }
 
 @media ( min-width: $media-sm ) {}

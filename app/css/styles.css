@@ -39,6 +39,10 @@
   box-sizing: border-box;
   word-wrap: break-word; }
 
+::selection {
+  background-color: #000000;
+  color: #ffffff; }
+
 html {
   min-height: 100%;
   position: relative; }
@@ -90,16 +94,6 @@ i b,
 em b {
   font-family: "ralewaybold_italic"; }
 
-footer {
-  background-color: #800000;
-  color: #ffffff;
-  bottom: 0;
-  height: 60px;
-  padding: 20px;
-  position: absolute;
-  text-align: center;
-  width: 100%; }
-
 @media (min-width: 320px) {
   body {
     padding: 105px 0 0 0; } }
@@ -113,64 +107,24 @@ footer {
   content: '';
   display: block; }
 
-.aside, .aside-nav-category__link, .aside-nav-tag__link {
+.aside-nav-category__link, .aside-nav-tag__link, .aside {
   transition: all 0.5s ease; }
 
-@media (min-width: 320px) {
-  .header {
-    background: #ffffff;
-    border-bottom: 1px solid #800000;
-    height: 100px;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%; }
-    .header__logo-area {
-      height: 60px;
-      margin: 5px 0 0 0;
-      text-align: center; }
-    .header__logo-link {
-      height: inherit; }
-    .header__logo-image {
-      height: inherit;
-      width: auto; } }
-
-@media (min-width: 992px) {
-  .header {
-    height: 130px; }
-    .header__logo-area {
-      height: 90px; } }
-
-@media (min-width: 320px) {
+.navigation {
+  bottom: 5px;
+  position: absolute;
+  text-align: center;
   width: 100%; }
-
-@media (min-width: 992px) {
-  .main {
-    float: left;
-    padding-right: 20px;
-    width: 70%; } }
-
-@media (min-width: 320px) {
-  .aside {
-    background-color: #ffffff;
-    height: calc( 100% - 100px);
-    left: 100%;
-    overflow: auto;
-    padding: 5px 10px;
-    position: fixed;
-    top: 100px;
-    width: 100%; }
-    .aside--opened {
-      left: 0; } }
-
-@media (min-width: 992px) {
-  .aside {
-    float: left;
-    height: auto;
-    overflow: hidden;
-    padding: 0;
-    position: static;
-    width: 30%; } }
+  .navigation__list {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .navigation__item {
+    display: inline-block; }
+  .navigation__link {
+    color: #000000;
+    padding: 0 7px;
+    text-decoration: none; }
 
 @media (min-width: 320px) {
   .aside-toggle {
@@ -199,22 +153,6 @@ footer {
 @media (min-width: 992px) {
   .aside-toggle {
     display: none; } }
-
-.navigation {
-  bottom: 5px;
-  position: absolute;
-  text-align: center;
-  width: 100%; }
-  .navigation__list {
-    list-style: none;
-    margin: 0;
-    padding: 0; }
-  .navigation__item {
-    display: inline-block; }
-  .navigation__link {
-    color: #000000;
-    padding: 0 7px;
-    text-decoration: none; }
 
 .aside-nav-category {
   text-align: left; }
@@ -264,11 +202,11 @@ footer {
   padding: 10px; }
 
 .search-form {
-  height: 30px; }
+  height: 40px; }
   .search-form__field, .search-form__button {
     border: 1px solid #000000;
     float: left;
-    height: 30px;
+    height: 40px;
     padding: 5px; }
   .search-form__field {
     background-color: #ffffff;
@@ -278,6 +216,7 @@ footer {
     background-color: #aa0000;
     border-left: 0;
     color: #ffffff;
+    text-transform: uppercase;
     width: 20%; }
     .search-form__button:hover {
       background-color: #d40000; }
@@ -286,4 +225,72 @@ footer {
   margin: 0 auto;
   max-width: 1200px;
   padding: 0 20px;
+  width: 100%; }
+
+@media (min-width: 320px) {
+  .header {
+    background: #ffffff;
+    height: 100px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%; }
+    .header__logo-area {
+      height: 60px;
+      margin: 5px 0 0 0;
+      text-align: center; }
+    .header__logo-link {
+      height: inherit; }
+    .header__logo-image {
+      height: inherit;
+      width: auto; } }
+
+@media (min-width: 992px) {
+  .header {
+    height: 130px; }
+    .header__logo-area {
+      height: 90px; } }
+
+@media (min-width: 320px) {
+  .main {
+    padding: 5px 0;
+    width: 100%; } }
+
+@media (min-width: 992px) {
+  .main {
+    float: left;
+    padding-right: 20px;
+    width: 70%; } }
+
+@media (min-width: 320px) {
+  .aside {
+    background-color: #ffffff;
+    height: calc( 100% - 100px);
+    left: 100%;
+    overflow: auto;
+    padding: 5px 10px;
+    position: fixed;
+    top: 100px;
+    width: 100%;
+    z-index: 2; }
+    .aside--opened {
+      left: 0; } }
+
+@media (min-width: 992px) {
+  .aside {
+    float: left;
+    height: auto;
+    overflow: hidden;
+    padding: 0;
+    position: static;
+    width: 30%; } }
+
+.footer {
+  background-color: #800000;
+  color: #ffffff;
+  bottom: 0;
+  height: 60px;
+  padding: 20px;
+  position: absolute;
+  text-align: center;
   width: 100%; }

@@ -6,11 +6,17 @@
 // fonts
 @import 'fonts';
 
-// configurations
-@import 'configurations';
+// defaults
+@import 'defaults';
 
 // placeholders
 @import 'placeholders';
+
+// components
+@import 'components/components';
+
+// wrapper
+@import 'wrapper';
 
 // header
 @import 'header';
@@ -21,19 +27,5 @@
 // aside
 @import 'aside';
 
-// aside-toggle
-@import 'aside-toggle';
-
-// components
-@import 'components/components';
-
-.wrapper {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 0 20px;
-    width: 100%;
-
-    &::after {
-        @extend %clearfixafter;
-    }
-}
+// footer
+@import 'footer';

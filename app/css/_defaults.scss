@@ -6,6 +6,11 @@
     word-wrap: break-word;
 }
 
+::selection {
+    background-color: $color-black;
+    color: $color-white;
+}
+
 html {
     min-height: 100%;
     position: relative;
@@ -64,17 +69,6 @@ em strong,
 i b,
 em b {
     font-family: $primaryFontFamilyBoldItalic;
-}
-
-footer {
-    background-color: $color-maroon;
-    color: $color-white;
-    bottom: 0;
-    height: 60px;
-    padding: 20px;
-    position: absolute;
-    text-align: center;
-    width: 100%;
 }
 
 @media ( min-width: $media-xs ) {
