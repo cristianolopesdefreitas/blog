@@ -13,7 +13,7 @@
     }
 
     &__link {
-        border: 1px solid $color-maroon;
+        border: 1px solid $color-black;
         color: $color-black;
         font-size: 14px;
         padding: 5px 20px;
@@ -23,7 +23,7 @@
         @extend %transition;
 
         &:hover {
-            background-color: $color-guardsman-red;
+            background-color: $color-black;
             color: $color-white;
         }
     }

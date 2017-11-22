@@ -16,7 +16,9 @@
 
     &__link {
         color: $color-black;
+        font-family: $primaryFontFamilyBold;
         padding: 0 7px;
         text-decoration: none;
+        text-transform: uppercase;
     }
 }

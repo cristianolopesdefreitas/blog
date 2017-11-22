@@ -21,6 +21,7 @@ body {
     color: $color-black;
     font-family: $primaryFontFamily;
     margin: 0 0 60px 0;
+    padding: 105px 0 0 0;
     text-align: justify;
 }
 
@@ -69,18 +70,4 @@ em strong,
 i b,
 em b {
     font-family: $primaryFontFamilyBoldItalic;
-}
-
-@media ( min-width: $media-xs ) {
-    body {
-        padding: 105px 0 0 0;
-    }
-}
-
-@media ( min-width: $media-sm ) {}
-
-@media ( min-width: $media-md ) {
-    body {
-        padding: 135px 0 0 0;
-    }
 }

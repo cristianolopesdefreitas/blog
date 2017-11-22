@@ -1,12 +1,13 @@
 @media ( min-width: $media-xs ) {
     .header {
         background: $color-white;
-        // border-bottom: 1px solid $color-maroon;
+        border-bottom: 1px solid $color-black;
         height: 100px;
         left: 0;
         position: fixed;
         top: 0;
         width: 100%;
+        z-index: 2;
 
         &__logo-area {
             height: 60px;
@@ -28,11 +29,11 @@
 @media ( min-width: $media-sm ) {}
 
 @media ( min-width: $media-md ) {
-    .header {
-        height: 130px;
-
-        &__logo-area {
-            height: 90px;
-        }
-    }
+    // .header {
+    //     height: 130px;
+    //
+    //     &__logo-area {
+    //         height: 90px;
+    //     }
+    // }
 }

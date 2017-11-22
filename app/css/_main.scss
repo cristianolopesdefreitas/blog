@@ -1,8 +1,7 @@
-.main {}
-
 @media ( min-width: $media-xs ) {
     .main {
-        padding: 5px 0;
+        float: left;
+        padding: 10px 0;
         width: 100%;
     }
 }
@@ -11,7 +10,6 @@
 
 @media ( min-width: $media-md ) {
     .main {
-        float: left;
         padding-right: 20px;
         width: 70%;
     }
