@@ -100,7 +100,7 @@ em b {
   content: '';
   display: block; }
 
-.aside-nav-category__link, .aside-nav-tag__link, .aside {
+.aside-nav-category__link, .aside-nav-tag__link, .scroll-to-top, .aside {
   transition: all 0.5s ease; }
 
 .navigation {
@@ -159,7 +159,7 @@ em b {
     display: block; }
   .aside-nav-category__link {
     color: #000000;
-    display: block;
+    display: inline-block;
     padding: 5px 0;
     text-decoration: none; }
     .aside-nav-category__link:hover {
@@ -225,14 +225,15 @@ em b {
     font-size: 25px;
     margin: 0 0 10px 0; }
   .article-item__date {
-    color: #000000;
-    font-family: "pixellarimedium";
-    font-size: 14px;
-    margin: 0 0 10px 0;
-    text-transform: uppercase; }
-    .article-item__date span {
-      color: #800000;
-      font-family: "ralewaybold"; }
+    background-color: #000000;
+    color: #ffffff;
+    font-family: "ralewayregular";
+    font-size: 13px;
+    margin: 0 0 5px 0;
+    padding: 5px;
+    text-align: right; }
+    .article-item__date:before {
+      content: '>> '; }
   .article-item__image-container {
     margin: 0 0 10px 0;
     position: relative;
@@ -255,9 +256,9 @@ em b {
     color: #000000;
     margin: 0 0 15px 0; }
   .article-item__tags {
-    font-family: "pixellarimedium";
-    font-size: 14px;
+    font-family: "ralewaybold";
     margin: 0 0 15px 0;
+    padding: 5px 0;
     text-transform: uppercase; }
     .article-item__tags a {
       color: #800000;
@@ -279,6 +280,33 @@ em b {
   border: none;
   height: 2px;
   margin: 10px 0 15px 0; }
+
+.scroll-to-top {
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid #000000;
+  bottom: 40px;
+  color: #ffffff;
+  cursor: pointer;
+  display: block;
+  height: 40px;
+  position: fixed;
+  right: -40px;
+  text-align: center;
+  width: 40px; }
+  .scroll-to-top__show {
+    right: 20px; }
+  .scroll-to-top__arrow {
+    border-color: transparent transparent #000000 transparent;
+    border-style: solid;
+    border-width: 0 12.5px 20px 12.5px;
+    height: 0;
+    left: 0;
+    margin: 0 auto;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 0; }
 
 .wrapper {
   margin: 0 auto;
