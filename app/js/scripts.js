@@ -1,13 +1,58 @@
 (function() {
     'use strict';
 
-    var $document = $( document );
+    var $document = $( document ),
+        $body = $( 'body' ),
+        $header = $( '.header' ),
+        currentYOffset = window.pageYOffset;
 
     function asideToggle() {
         var $aside = $( '.aside' ),
             openedClass = 'aside--opened';
 
         $aside.toggleClass( openedClass, !$aside.hasClass( openedClass ) );
+    }
+
+    function asideClose() {
+        $( '.aside' ).removeClass( 'aside--opened' );
+    }
+
+    function headerScrollControl( e ) {
+        var Yoffset = e.currentTarget.pageYOffset;
+
+        if ( Yoffset >= 0 ) {
+            if ( Yoffset === 0 || Yoffset < currentYOffset ) {
+                downHeader();
+            } else if ( Yoffset > currentYOffset && Yoffset > $header.outerHeight() ) {
+                upHeader();
+            }
+        }
+
+        currentYOffset = Yoffset;
+
+        asideClose();
+    }
+
+    function headerHeightAdjustment() {
+        $body.css({
+            'padding-top': $header.outerHeight() + 'px'
+        });
+    }
+
+    function downHeader() {
+        headerHeightAdjustment();
+
+        $header
+            .addClass( 'header--fixed' )
+            .removeClass( 'header--up' )
+            .addClass( 'header--down' );
+    }
+
+    function upHeader() {
+        $header
+            .addClass( 'header--up' )
+            .addClass( 'header--fixed' )
+            .removeClass( 'header--down' );
     }
 
     function scrollToTopToggle() {
@@ -27,7 +72,8 @@
             asideToggle();
         });
 
-        $document.on( 'scroll', function() {
+        $( window ).on( 'scroll', function( e ) {
+            headerScrollControl( e );
             scrollToTopToggle();
         });
 

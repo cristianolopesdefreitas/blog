@@ -1,33 +1,19 @@
 @media ( min-width: $media-xs ) {
     .aside-toggle {
-        background-color: $color-white;
+        background-color: $color-black;
         border: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         height: 30px;
         padding: 0;
-        position: absolute;
-        right: 10px;
-        top: 10px;
         width: 40px;
 
         &__line {
-            background-color: $color-black;
+            background-color: $color-white;
             display: block;
             height: 5px;
-            position: absolute;
-            width: 100%;
-
-            &:first-child {
-                top: 0;
-            }
-
-            &:nth-child( even ) {
-                margin-top: -2.5px;
-                top: 50%;
-            }
-
-            &:last-child {
-                bottom: 0;
-            }
+            width: 40px;
         }
     }
 }
