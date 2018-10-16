@@ -36,9 +36,9 @@
             .src( files.vendorJS.concat( files.defaultJS ) )
             .pipe( concat( 'scripts.js' ) )
             .pipe( uglify() )
+            .pipe( rename({
                 suffix: '.min'
-                .pipe( rename({
-            }) )
+            }))
             .pipe( gulp.dest( 'dist/js' ) );
     });
 
