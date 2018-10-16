@@ -7,12 +7,12 @@
         padding: 0;
     }
 
-    &__item {
+    li {
         display: inline-block;
         margin: 6px 1px;
     }
 
-    &__link {
+    a {
         border: 1px solid $color-black;
         color: $color-black;
         font-size: 14px;

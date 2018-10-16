@@ -99,12 +99,11 @@ em b {
   content: '';
   display: block; }
 
-.aside-nav-category__link, .aside-nav-tag__link, .scroll-to-top, .aside {
+.aside-nav-category a, .aside-nav-tag a, .scroll-to-top, .aside {
   transition: all 0.5s ease; }
 
 .navigation {
-  text-align: center;
-  width: 100%; }
+  text-align: center; }
   .navigation__list {
     list-style: none;
     margin: 0;
@@ -112,7 +111,7 @@ em b {
   .navigation__item {
     display: inline-block; }
   .navigation__link {
-    color: #000000;
+    color: #ffffff;
     font-family: "ralewaybold";
     padding: 0 7px;
     text-decoration: none;
@@ -146,12 +145,12 @@ em b {
     padding: 0; }
   .aside-nav-category__item {
     display: block; }
-  .aside-nav-category__link {
+  .aside-nav-category a {
     color: #000000;
     display: inline-block;
     padding: 5px 0;
     text-decoration: none; }
-    .aside-nav-category__link:hover {
+    .aside-nav-category a:hover {
       padding-left: 10px; }
 
 .aside-nav-tag {
@@ -160,17 +159,17 @@ em b {
     list-style: none;
     margin: 0;
     padding: 0; }
-  .aside-nav-tag__item {
+  .aside-nav-tag li {
     display: inline-block;
     margin: 6px 1px; }
-  .aside-nav-tag__link {
+  .aside-nav-tag a {
     border: 1px solid #000000;
     color: #000000;
     font-size: 14px;
     padding: 5px 20px;
     text-decoration: none;
     text-transform: uppercase; }
-    .aside-nav-tag__link:hover {
+    .aside-nav-tag a:hover {
       background-color: #000000;
       color: #ffffff; }
 
@@ -233,7 +232,7 @@ em b {
     position: absolute;
     right: 0;
     top: 0; }
-  .article-item__image {
+  .article-item img {
     height: auto;
     max-width: 100%; }
   .article-item__resume {
@@ -297,7 +296,7 @@ em b {
     align-items: center;
     background: #000000;
     display: flex;
-    height: 70px;
+    height: 100px;
     justify-content: space-between;
     left: 0;
     position: relative;
@@ -323,7 +322,7 @@ em b {
       padding: 0 20px;
       width: 100%; }
     .header__logo-area {
-      height: 60px;
+      height: 90px;
       margin: 0; }
     .header__logo-link {
       display: block;
@@ -346,13 +345,13 @@ em b {
 @media (min-width: 320px) {
   .aside {
     background-color: #ffffff;
-    height: calc( 100% - 70px);
+    height: calc( 100% - 100px);
     left: 100%;
     margin-top: 10px;
     overflow: auto;
     padding: 5px 10px;
     position: fixed;
-    top: 70px;
+    top: 100px;
     width: 100%;
     z-index: 2; }
     .aside--opened {
