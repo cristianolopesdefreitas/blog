@@ -212,7 +212,8 @@ em b {
   .article-item__title {
     color: #000000;
     font-size: 25px;
-    margin: 0 0 10px 0; }
+    margin: 0 0 10px 0;
+    text-align: left; }
   .article-item__date {
     color: #000000;
     font-family: "ralewayregular";
@@ -362,7 +363,7 @@ em b {
     float: left;
     height: auto;
     overflow: hidden;
-    padding: 0;
+    padding: 5px 0;
     position: static;
     width: 30%; } }
 
